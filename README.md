@@ -14,3 +14,4 @@ http://www.codecademy.com/tracks/ruby
 
 https://www.bloc.io/ruby-warrior/
 
+apigee REST APIs desing book
