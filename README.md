@@ -68,9 +68,11 @@ The boot camp is organized in the following way:
 1. MVC
 2. Routes file
 3. Controllers and view rendering
-4. Models
-5. Asset pipeline
-6. Templating (json)
+4. Migrations
+5. Models
+    - Create a relation of each type.
+6. Asset pipeline
+7. Templating (json)
 
 
 ###Topic 3: REST APIs
