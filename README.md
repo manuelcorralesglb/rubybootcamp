@@ -53,15 +53,18 @@ The boot camp is organized in the following way:
 
 ###Topic 1: Ruby
 
+1. Variables and types
 1. Flow control, loops and iterators.
 2. POO in ruby, classes, inheritance, modules and mixins.
-    - Create a class.
-    - Create a subclass.
-    - Create a module.
-    - Mix the module in the subclass.
-    - Create a class and mix the Enumerable module in it.
 3. Blocks, lambdas and procs.
 4. Bundler.
+
+####Exercises
+    - Create a class Album, Song and Artist
+    - Create a subclass
+    - Create a module
+    - Mix the module in the subclass
+    - Create a class and mix the Enumerable module in it
 
 
 ###Topic 2: Rails
