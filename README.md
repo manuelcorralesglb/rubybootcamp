@@ -41,9 +41,30 @@ You can contact other bootcamp participants or any available tutor if you need t
 
 5. Create a new repository in[ GitHub](https://github.com/)  to host the project code.
 
+6. REST client (POSTMAN recommended)
+
 
 
 ###General Guidelines
 
 The boot camp is organized in the following way:
 
+##Learning days
+
+###Topic 1: Ruby
+
+1. Flow control, loops and iterators.
+2. POO in ruby, classes, inheritance, modules and mixins.
+    - Create a class.
+    - Create a subclass.
+    - Create a module.
+    - Mix the module in the subclass.
+    - Create a class and mix the Enumerable module in it.
+3. Blocks, lambdas and procs.
+
+
+###Topic 2: Rails
+
+###Topic 3: REST APIs
+
+###
