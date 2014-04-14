@@ -61,9 +61,17 @@ The boot camp is organized in the following way:
     - Mix the module in the subclass.
     - Create a class and mix the Enumerable module in it.
 3. Blocks, lambdas and procs.
+4. Bundler.
 
 
 ###Topic 2: Rails
+1. MVC
+2. Routes file
+3. Controllers and view rendering
+4. Models
+5. Asset pipeline
+6. Templating (json)
+
 
 ###Topic 3: REST APIs
 
