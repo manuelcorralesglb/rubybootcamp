@@ -69,10 +69,11 @@ The boot camp is organized in the following way:
 2. Routes file
 3. Controllers and view rendering
 4. Migrations
-5. Models
+5. Rails console
+6. Models
     - Create a relation of each type.
-6. Asset pipeline
-7. Templating (json)
+7. Asset pipeline
+8. JSON templates
 
 
 ###Topic 3: REST APIs
