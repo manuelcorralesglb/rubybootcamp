@@ -77,6 +77,7 @@ The boot camp is organized in the following way:
     - Create a relation of each type.
 7. Asset pipeline
 8. JSON templates
+9. TDD, rspec, cucumber, capybara
 
 
 ###Topic 3: REST APIs
