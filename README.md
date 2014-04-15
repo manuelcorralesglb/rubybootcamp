@@ -53,9 +53,10 @@ The boot camp is organized in the following way:
 
 ###Topic 1: Ruby
 
-1. Variables and types
+1. Variables and types (String, numbers, Hashes, Arrays)
 1. Flow control, loops and iterators.
 2. POO in ruby, classes, inheritance, modules and mixins.
+3. self, super.
 3. Blocks, lambdas and procs.
 4. Bundler.
 
