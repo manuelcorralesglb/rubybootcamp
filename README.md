@@ -74,7 +74,7 @@ The boot camp is organized in the following way:
   6. Implement an “age” method in Person, Student and Teacher and the include the module in the classes to create a mixin. Call the methods implemented in the module in instances of the classes.
 
 ### Topic 3: Rails MVC
-  1. Create a new rails application named prode.
+  1. Create a new rails application named rails_bootcamp.
   2. Generate a model and migration called Team using the "rails generate" script. Team must have this fields: name, image.
   3. Run the migrations using rake.
   4. Open the rails console (rails console) and create a few teams. Then query the teams using ActiveRecord methods:
@@ -96,21 +96,24 @@ The boot camp is organized in the following way:
   3. Complete the CRUD operations using JSON.
   
 ### Topic 6: Models relations
-  1. 
+  1. Create a new Match model that should have at least time and two teams.
+  2. Link the Game and Team models using the ActiveRecord relations.
+  3. Create a new page to create Matches.
+  4. Create a new page to display the list of matches sorted by date.
+  5. Make the team names a link and when the users clicks on it show the Team show page.
+
+### Topic 7: Testing
+  1. Include rspec, factory girl and Capybara gems in the Gemfile.
+  2. Write factories for teams and matches.
+  3. Write a capybara test that verifies the creation of a Team.
+  4. Write a capybara test that verifies the creation of a Match.
 
 
-1. MVC
-2. Routes file
-3. Controllers and view rendering
-4. Migrations
-5. Rails console
-6. Models
-    - Create a relation of each type.
-7. Asset pipeline
-8. JSON templates
-9. TDD, rspec, cucumber, capybara
-
-
-###Topic 3: REST APIs
-
-###
+### Topic 8: Beutify the app
+  1. Include bootstrap css and js into the project (use the vendor folder).
+  2. Add a header to the application that includes links to:
+    * List the teams.
+    * List the matches.
+    * Add a new team.
+    * Add a new match.
+  3. The header must be displayed in all pages.
