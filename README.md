@@ -51,24 +51,34 @@ The boot camp is organized in the following way:
 
 ##Learning days
 
-###Topic 1: Ruby
-
-1. Variables and types (String, numbers, Hashes, Arrays)
-1. Flow control, loops and iterators.
-2. POO in ruby, classes, inheritance, modules and mixins.
-3. self, super.
-3. Blocks, lambdas and procs.
-4. Bundler.
-
-####Exercises
-    - Create a class Album, Song and Artist
-    - Create a subclass
-    - Create a module
-    - Mix the module in the subclass
-    - Create a class and mix the Enumerable module in it
+###Topic 1: Ruby basics
+  1. Create a game in which the user has to guess a number. (Use a class)
+  2. The number to be guessed must be initialized randomly in the constructor.
+  3. The constructor must take as a parameter the max attempts the user have to guess the number.
+  4. The game must indicate the user if the number entered is bigger or smaller than the one he has to guess.
+  5. The game should keep track of all the numbers the user entered.
+  6. When the user wins, a message should be displayed to the user telling so and also a score should be printed. The score should be calculated based on the attempts the user did and the max amount of attempts it had.
+  7. The user lose if exceeds the limit of attempts.
+  8. Add a method that prints all numbers the user entered.
 
 
-###Topic 2: Rails
+### Topic 2: Inheritance, polymorphism and duck typing
+  1. Implement a hierarchy of Person, Student and Teacher.
+  2. Implement a method “introduce_me” in each of the classes that prints something like: “Hello, my name is Juan and I am a Student”.
+  3. Create an array that contains at least one instance of each of the defined classes, loop through it and invoke the introduce_me method.
+  4. Remove the inheritance relationships and repeat the step 4. (Duck typing)
+  5. Implement a module with the following methods (hint: all methods should rely on an “age” method not implemented in the module):
+    * can_drive?
+    * can_vote?
+    * can_travel_alone?
+  6. Implement an “age” method in Person, Student and Teacher and the include the module in the classes to create a mixin. Call the methods implemented in the module in instances of the classes.
+
+### Topic 3: Rails
+  1. Create a new rails application named prode.
+  2. Generate a model and migration called Team using the "rails generate" script. Team must have this fields: name, image.
+  3. 
+
+
 1. MVC
 2. Routes file
 3. Controllers and view rendering
