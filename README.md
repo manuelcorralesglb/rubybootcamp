@@ -75,7 +75,7 @@ The boot camp is organized in the following way:
 
 ### Topic 3: Rails MVC
   1. Create a new rails application named rails_bootcamp.
-  2. Generate a model and migration called Team using the "rails generate" script. Team must have this fields: name, image.
+  2. Generate a model and migration called Team using the "rails generate" script. Team must have this fields: name, logo_image and stadium_image.
   3. Run the migrations using rake.
   4. Open the rails console (rails console) and create a few teams. Then query the teams using ActiveRecord methods:
     * Team.where(condition)
@@ -85,6 +85,12 @@ The boot camp is organized in the following way:
   6. Generate a view that displays the Team name and show the team image (you have to use the instance variable declared in the controller to access the team)
   7. Create a route in the routes.rb that hits the method show in the team controller.
   8. Try the app by hitting the url defined in the routes file using a browser.
+
+Key points:
+  * The page should display the team name and logo and the stadium picture.
+
+Extra credits:
+  * Add stadium coordinates to the model and display the location of the stadium in a google map embedded in the page.
 
 ### Topic 4: CRUD
   1. Create a new route, a new method in the controller and a view to display a form to create a new Team.
@@ -109,19 +115,25 @@ Key points:
   * Use the respond_to method to render the json response.
   * Use the correct http status codes in each case.
   
-### Topic 6: Models relations
+### Topic 6: Relations (part 1)
   1. Create a new Match model that should have at least a time field and two teams.
   2. Link the Game and Team models using the ActiveRecord relations.
   3. Create a new page to create Matches.
-  4. Create a Group model and link the Match to a Group using ActiveRecord relations.
-  5. Create a page to create Groups.
-  6. Create a page to add matches to a group.
-  7. Create a page that lists the groups.
-  8. In the page created in point 7, make the group name a link that takes you to the group matches. Matches should be sorted by date.
+ 
+### Topic 6.1: Relations (part 2)
+  1. Create a Group model and link the Match to a Group using ActiveRecord relations.
+  2. Create a page to create Groups.
+  3. Create a page to add matches to a group.
+  4. Create a page that lists the groups.
+  5. In the page created in point 7, make the group name a link that takes you to the group matches. Matches should be sorted by date.
 
 Key points:
   * You should have a has_one and a has_many relationship.
   * You should have validations in the Group and Match models.
+
+Extra credit:
+  * Create a new model Stadium and refactor the Team model to move out the stadium properties to his own class. Make a relation between Stadium and Team.
+  * Add a relation between match and stadium (where the match will be played).
 
 ### Topic 7: Testing
   1. Include rspec, factory girl and Capybara gems in the Gemfile.
