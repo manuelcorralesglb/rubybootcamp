@@ -88,12 +88,14 @@ The boot camp is organized in the following way:
 
 ### Topic 4: CRUD
   1. Create a new route, a new method in the controller and a view to display a form to create a new Team.
-  2. Complete the routes and methods to have a full CRUD of the Team entity.
-  3. Add validations to the Team model so the name can't be empty.
----
+  2. Implement all steps needed to have a page that lists all the teams.
+  3. Add edit and delete links next to each team in the listing page.
+  4. Implement the edit and delete actions.
+  5. Add validations to the Team model so the name can't be empty when creating or updating a Team.
 Key points:
   * Use Rails convention to name the methods in the controller.
   * Use Rails form helpers.
+  * Use Rails link helpers.
   * Reuse the form in both create and update pages by creating a partial.
 
 ### Topic 5: REST/JSON
@@ -101,7 +103,6 @@ Key points:
   2. Create a jbuilder template to get a JSON response for a Team.
   3. Complete the CRUD operations using JSON.
   4. Try it using the POSTMAN REST client.
----
 Key points:
   * Use the respond_to method to render the json response.
   * Use the correct http status codes in each case.
@@ -110,8 +111,14 @@ Key points:
   1. Create a new Match model that should have at least a time field and two teams.
   2. Link the Game and Team models using the ActiveRecord relations.
   3. Create a new page to create Matches.
-  4. Create a new page to display the list of matches sorted by date.
-  5. Make the team names a link and when the users clicks on it show the Team show page.
+  4. Create a Group model and link the Match to a Group using ActiveRecord relations.
+  5. Create a page to create Groups.
+  6. Create a page to add matches to a group.
+  7. Create a page that lists the groups.
+  8. In the page created in point 7, make the group name a link that takes you to the group matches. Matches should be sorted by date.
+Key points:
+  * You should have a has_one and a has_many relationship.
+  * You should have validations in the Group and Match models.
 
 ### Topic 7: Testing
   1. Include rspec, factory girl and Capybara gems in the Gemfile.
@@ -120,11 +127,5 @@ Key points:
   4. Write a capybara test that verifies the creation of a Match.
 
 
-### Topic 8: Beutify the app
+### Topic 8: Beautify the app
   1. Include bootstrap css and js into the project (use the vendor folder).
-  2. Add a header to the application that includes links to:
-    * List the teams.
-    * List the matches.
-    * Add a new team.
-    * Add a new match.
-  3. The header must be displayed in all pages.
