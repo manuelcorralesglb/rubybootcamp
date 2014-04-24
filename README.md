@@ -92,6 +92,7 @@ The boot camp is organized in the following way:
   3. Add edit and delete links next to each team in the listing page.
   4. Implement the edit and delete actions.
   5. Add validations to the Team model so the name can't be empty when creating or updating a Team.
+
 Key points:
   * Use Rails convention to name the methods in the controller.
   * Use Rails form helpers.
@@ -103,6 +104,7 @@ Key points:
   2. Create a jbuilder template to get a JSON response for a Team.
   3. Complete the CRUD operations using JSON.
   4. Try it using the POSTMAN REST client.
+
 Key points:
   * Use the respond_to method to render the json response.
   * Use the correct http status codes in each case.
@@ -116,6 +118,7 @@ Key points:
   6. Create a page to add matches to a group.
   7. Create a page that lists the groups.
   8. In the page created in point 7, make the group name a link that takes you to the group matches. Matches should be sorted by date.
+
 Key points:
   * You should have a has_one and a has_many relationship.
   * You should have validations in the Group and Match models.
