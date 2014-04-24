@@ -52,7 +52,7 @@ The boot camp is organized in the following way:
 ##Learning days
 
 ###Topic 1: Ruby basics
-  1. Create a game in which the user has to guess a number. (Use a class)
+  1. Create a game in which the user has to guess a number.
   2. The number to be guessed must be initialized randomly in the constructor.
   3. The constructor must take as a parameter the max attempts the user have to guess the number.
   4. The game must indicate the user if the number entered is bigger or smaller than the one he has to guess.
@@ -84,19 +84,30 @@ The boot camp is organized in the following way:
   5. Generate a controller TeamController. Implement a method named show that fetches a Team by id and assign it to an instance variable @team.
   6. Generate a view that displays the Team name and show the team image (you have to use the instance variable declared in the controller to access the team)
   7. Create a route in the routes.rb that hits the method show in the team controller.
+  8. Try the app by hitting the url defined in the routes file using a browser.
 
 ### Topic 4: CRUD
-  1. Create a new route, a new method in the controller and a view to display a form to create a new Team (use rails conventions).
+  1. Create a new route, a new method in the controller and a view to display a form to create a new Team.
   2. Complete the routes and methods to have a full CRUD of the Team entity.
   3. Add validations to the Team model so the name can't be empty.
+---
+Key points:
+  * Use Rails convention to name the methods in the controller.
+  * Use Rails form helpers.
+  * Reuse the form in both create and update pages by creating a partial.
 
 ### Topic 5: REST/JSON
   1. Add the jbuilder gem to the Gemfile (if not already present)
-  2. Create a jbuilder template to render a JSON for a Team.
+  2. Create a jbuilder template to get a JSON response for a Team.
   3. Complete the CRUD operations using JSON.
+  4. Try it using the POSTMAN REST client.
+---
+Key points:
+  * Use the respond_to method to render the json response.
+  * Use the correct http status codes in each case.
   
 ### Topic 6: Models relations
-  1. Create a new Match model that should have at least time and two teams.
+  1. Create a new Match model that should have at least a time field and two teams.
   2. Link the Game and Team models using the ActiveRecord relations.
   3. Create a new page to create Matches.
   4. Create a new page to display the list of matches sorted by date.
