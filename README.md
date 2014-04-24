@@ -76,7 +76,14 @@ The boot camp is organized in the following way:
 ### Topic 3: Rails
   1. Create a new rails application named prode.
   2. Generate a model and migration called Team using the "rails generate" script. Team must have this fields: name, image.
-  3. 
+  3. Run the migrations using rake.
+  4. Open the rails console (rails console) and create a few teams. Then query the teams using ActiveRecord methods:
+    * Team.where(condition)
+    * Team.all
+    * Team.first
+  5. Generate a controller TeamController. Implement a method named show that fetches a Team by id and assign it to an instance variable @team.
+  6. Generate a view that displays the Team name and show the team image (you have to use the instance variable declared in the controller to access the team)
+  7. Create a route in the routes.rb that hits the method show in the team controller.
 
 
 1. MVC
