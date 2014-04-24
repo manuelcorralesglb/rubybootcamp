@@ -73,7 +73,7 @@ The boot camp is organized in the following way:
     * can_travel_alone?
   6. Implement an “age” method in Person, Student and Teacher and the include the module in the classes to create a mixin. Call the methods implemented in the module in instances of the classes.
 
-### Topic 3: Rails
+### Topic 3: Rails MVC
   1. Create a new rails application named prode.
   2. Generate a model and migration called Team using the "rails generate" script. Team must have this fields: name, image.
   3. Run the migrations using rake.
@@ -84,6 +84,19 @@ The boot camp is organized in the following way:
   5. Generate a controller TeamController. Implement a method named show that fetches a Team by id and assign it to an instance variable @team.
   6. Generate a view that displays the Team name and show the team image (you have to use the instance variable declared in the controller to access the team)
   7. Create a route in the routes.rb that hits the method show in the team controller.
+
+### Topic 4: CRUD
+  1. Create a new route, a new method in the controller and a view to display a form to create a new Team (use rails conventions).
+  2. Complete the routes and methods to have a full CRUD of the Team entity.
+  3. Add validations to the Team model so the name can't be empty.
+
+### Topic 5: REST/JSON
+  1. Add the jbuilder gem to the Gemfile (if not already present)
+  2. Create a jbuilder template to render a JSON for a Team.
+  3. Complete the CRUD operations using JSON.
+  
+### Topic 6: Models relations
+  1. 
 
 
 1. MVC
