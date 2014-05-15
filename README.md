@@ -76,17 +76,26 @@ The boot camp is organized in the following way:
 ### Topic 3: Rails MVC
 #### Reading material
 #### Excercises
-Create a model, create a controller, create a route, create a view.
+Create a model, create a controller, create a route, create a view. (Read only, create the data using the console)
 #### Key points
+  * Understand the Gemfile.
+  * Understand migrations.
+  * Understand the request flow.
+  * Use rails console to store data.
+
 #### Extra credit
 
 
 ### Topic 4: Tests first
 #### Reading material
 #### Excercises
-Create a test for a new feature, see it fail, implement the feature.
+Create tests for the old features and test first approach for the creation part.
 Cucumber, capybara and rspec.
 #### Key points
+  * Make cucumber tests first.
+  * Implement the creation view, route, controller.
+  * Add validations to the model.
+
 #### Extra credit
 
 ### Topic 5: Adding a second model
@@ -114,11 +123,5 @@ Ideally using a different relation cardinality than the fist one
 #### Reading material
 #### Excercises
 Add foundation, bootstrap or semantic-ui to the app. Make also your own styles. Run the app in production mode.
-#### Key points
-#### Extra credit
-
-### Topic 9: Adding a second model
-#### Reading material
-#### Excercises
 #### Key points
 #### Extra credit
