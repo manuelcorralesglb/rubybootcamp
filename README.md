@@ -76,7 +76,7 @@ The boot camp is organized in the following way:
 ### Topic 3: Rails MVC
 #### Reading material
 #### Excercises
-  * Create a model, create a controller, create a route, create a view.
+Create a model, create a controller, create a route, create a view.
 #### Key points
 #### Extra credit
 
